@@ -6,7 +6,7 @@ android 学习总结
 
 ## [Java基础](https://github.com/woaigmz/AndroidStudySummary/blob/master/Java%E5%9F%BA%E7%A1%80/catalog.md)
 
-## [some面试题]()
+## [some面试题](https://github.com/woaigmz/AndroidStudySummary/blob/master/some%E9%9D%A2%E8%AF%95%E9%A2%98/catalog.md)
 
 ## [操作系统](https://github.com/woaigmz/AndroidStudySummary/blob/master/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/catalog.md)
 
