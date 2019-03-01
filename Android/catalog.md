@@ -23,7 +23,7 @@ NodeJs-eventLooper 排队执行任务 (message) 就有对应的 messagequeue 队
 - Handler 这个类在 android 消息机制中起什么作用，有哪些成员变量，有哪些重要的方法
 - Looper 构造函数做了什么，怎么实例化的，为什么要把Looper存在ThreadLoacl里，它又有哪些重要方法
 - Message 有哪些成员变量，有几种实例化方式，obtain方法什么时候用服用sPool的内存
-- MessageQueue 是谁来初始化，构造方法为什么有 native 方法，成员变量都是做什么用的，作为队列对外暴漏了哪些方法
+- MessageQueue 是谁来初始化，构造方法为什么有 native 方法，成员变量都是做什么用的，作为队列对外暴漏了哪些方法
 - 作为消息机制，用了什么样的架构模式，Handler，looper，messagequeue，thread，message，这些对象有样的联系
 
--------> [Handler 源码分析]() <-------
+-------> [Handler 源码分析](https://github.com/woaigmz/AndroidStudySummary/blob/master/Android/Handler%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md) <-------
