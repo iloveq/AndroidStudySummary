@@ -27,3 +27,5 @@ NodeJs-eventLooper 排队执行任务 (message) 就有对应的 messagequeue 队
 - 作为消息机制，用了什么样的架构模式，Handler，looper，messagequeue，thread，message，这些对象有样的联系
 
 -------> [Handler 源码分析](https://github.com/woaigmz/AndroidStudySummary/blob/master/Android/Handler%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md) <-------
+
+### 4 探讨android线程优先级及子线程的使用？
