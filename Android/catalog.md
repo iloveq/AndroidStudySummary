@@ -30,6 +30,8 @@ NodeJs-eventLooper 排队执行任务 (message) 就有对应的 messagequeue 队
 
 ### 4 探讨android线程优先级及子线程的使用？
 
+线程优先级的设置 Process.setThreadPriority(); new Thread().setPriority();
+
 ##### 主线程：
 - Activity的所有生命周期回调都是执行在主线程的.
 - Service默认是执行在主线程的.
