@@ -28,22 +28,50 @@ NodeJs-eventLooper 排队执行任务 (message) 就有对应的 messagequeue 队
 
 -------> [Handler 源码分析](https://github.com/woaigmz/AndroidStudySummary/blob/master/Android/Handler%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md) <-------
 
-### 4 探讨android线程优先级及子线程的使用？
+### 4 探讨 android 线程优先级及子线程的使用？
 
 线程优先级的设置 Process.setThreadPriority(); new Thread().setPriority();
 
 ##### 主线程：
-- Activity的所有生命周期回调都是执行在主线程的.
-- Service默认是执行在主线程的.
-- BroadcastReceiver的onReceive回调是执行在主线程的.
-- 没有使用子线程的looper的Handler的handleMessage, post(Runnable)是执行在主线程的.
-- AsyncTask的回调中除了doInBackground, 其他都是执行在主线程的.
-- View的post(Runnable)是执行在主线程的
+- Activity 的所有生命周期回调都是执行在主线程的.
+- Service 默认是执行在主线程的.
+- BroadcastReceiver 的 onReceive 回调是执行在主线程的.
+- 没有使用子线程的 looper 的 Handler 的 handleMessage, post(Runnable) 是执行在主线程的.
+- AsyncTask 的回调中除了 doInBackground, 其他都是执行在主线程的.
+- View 的 post(Runnable) 是执行在主线程的
 
 ##### 子线程：
-- 继承Thread
-- 实现Runnable接口
-- 使用AsycnTask doInBackground方法
+- 继承 Thread
+- 实现 Runnable 接口
+- 使用 AsycnTask doInBackground 方法
 - HandlerThread
 - IntentService https://github.com/aosp-mirror/platform_frameworks_base/blob/master/core/java/android/app/IntentService.java   (使用了           HandlerThread的looper)
 - Loader - CursorLoader
+
+### 5 探讨 android 进程，进程间通信方式，多进程的应用？
+
+### 6 探讨 android 事件分发机制
+
+### 7 探讨 android view 绘制流程
+
+### 8 探讨 android service
+
+### 9 探讨 android 系统从点击图标到应用启动
+
+### 10 探讨 android 系统从开机到 Launcher 
+
+### 11 SharedPerference 源码分享
+
+### 12 binder机制
+
+### 13 contentprovider 原理及底层实现，不同 api 的 getType区别
+
+### 14 Surface SurfaceView SurfaceHolder 
+
+### 15 activity 生命周期及管理
+
+### 16 fragment 生命周期及管理
+
+### 17 multidex 的实现原理及优化
+
+### 18 app 编译及打包流程
