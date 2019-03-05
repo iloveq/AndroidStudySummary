@@ -29,3 +29,17 @@ NodeJs-eventLooper 排队执行任务 (message) 就有对应的 messagequeue 队
 -------> [Handler 源码分析](https://github.com/woaigmz/AndroidStudySummary/blob/master/Android/Handler%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md) <-------
 
 ### 4 探讨android线程优先级及子线程的使用？
+主线程：
+- Activity的所有生命周期回调都是执行在主线程的.
+- Service默认是执行在主线程的.
+- BroadcastReceiver的onReceive回调是执行在主线程的.
+- 没有使用子线程的looper的Handler的handleMessage, post(Runnable)是执行在主线程的.
+- AsyncTask的回调中除了doInBackground, 其他都是执行在主线程的.
+- View的post(Runnable)是执行在主线程的
+使用子线程的方式
+- 继承Thread
+- 实现Runnable接口
+- 使用AsycnTask doInBackground方法
+- HandlerThread
+- IntentService https://github.com/aosp-mirror/platform_frameworks_base/blob/master/core/java/android/app/IntentService.java   (使用了           HandlerThread的looper)
+- Loader - CursorLoader
