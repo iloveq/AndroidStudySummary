@@ -75,3 +75,5 @@ NodeJs-eventLooper 排队执行任务 (message) 就有对应的 messagequeue 队
 ### 17 multidex 的实现原理及优化
 
 ### 18 app 编译及打包流程
+
+### 18 android 源码中的设计模式
