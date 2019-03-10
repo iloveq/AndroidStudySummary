@@ -47,8 +47,14 @@ NodeJs-eventLooper 排队执行任务 (message) 就有对应的 messagequeue 队
 - HandlerThread
 - IntentService https://github.com/aosp-mirror/platform_frameworks_base/blob/master/core/java/android/app/IntentService.java   (使用了           HandlerThread的looper)
 - Loader - CursorLoader
+- js原生交互,调原生的方法是在子线程中执行
 
 ### 5 探讨 android 进程，进程间通信方式，多进程的应用？
+进程跟线程的区别，进程是一般指的是一个执行单元,线程是cpu调度的最小单元,一个进程可以包括多个线程。
+进程间通信就是IPC。IPC不是android特有的。任何一个操作系统都有响应的IPC。
+
+ Windows上可以通过剪切板、管道和邮槽等进程间通信,Linux可以通过命名管道、共享内容、信号量等通信。虽然android基于linux内核的移动操作系统,他的通信方式并不能完全继承Linux,他有自己的进程通信方式，android 多进程设置android:process。
+
 
 ### 6 探讨 android 事件分发机制
 
