@@ -82,4 +82,6 @@ NodeJs-eventLooper 排队执行任务 (message) 就有对应的 messagequeue 队
 
 ### 18 app 编译及打包流程
 
-### 18 android 源码中的设计模式
+### 19 android 源码中的设计模式
+
+### 20 性能优化的几种角度(UI 内存 网络 数据 耗电) 优化工具及方法
