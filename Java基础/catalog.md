@@ -1,5 +1,6 @@
 ### 1：jvm 内存模型
 
+![内存模型](https://github.com/woaigmz/java-study/blob/master/jvm%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.png)
 
 ### 2：java 垃圾回收机制
 
