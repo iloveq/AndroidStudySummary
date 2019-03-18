@@ -55,6 +55,13 @@ NodeJs-eventLooper 排队执行任务 (message) 就有对应的 messagequeue 队
 
  Windows上可以通过剪切板、管道和邮槽等进程间通信,Linux可以通过命名管道、共享内容、信号量等通信。虽然android基于linux内核的移动操作系统,他的通信方式并不能完全继承Linux,他有自己的进程通信方式，android 多进程设置android:process。
 
+android 进程间通信方式
+- Bundle
+- 文件共享
+- Messenger
+- AIDL
+- ContentProvider
+- Socket
 
 ### 6 探讨 android 事件分发机制
 
