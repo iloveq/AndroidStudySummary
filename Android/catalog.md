@@ -55,6 +55,17 @@ NodeJs-eventLooper 排队执行任务 (message) 就有对应的 messagequeue 队
 
  Windows上可以通过剪切板、管道和邮槽等进程间通信,Linux可以通过命名管道、共享内容、信号量等通信。虽然android基于linux内核的移动操作系统,他的通信方式并不能完全继承Linux,他有自己的进程通信方式，android 多进程设置android:process。
 
+#### android多进程模式注意
+
+ - 创建多进程方法 android:process或者通过JNI在native层fork一个进程。
+ - 多进程,通俗点说就是会为每个进程同时分配一个不同的jvm虚拟机。不同的jvm在内存分配上就有不同的地址空间,所以单例模式、静态变量、线程同步会失效。对于应用来说,会application走多次。
+ - android 会为每个应用分配唯一的UID,具有相同的UID，才能共享数据。当然两个应用可以通过SharedUID的方式去共享私有数据。一个应用的多进程，就相当于两个不同的应用采用了SharedUID的模式。
+ - 进程间通信就要理解对象序列化的方式,Serializable与Parcelable的区别。
+
+##### 微信的小程序，支付宝的小程序，都会在后台任务栏中出现一个app多个任务栏？
+猜想 可能是会有多个进程实现？有待验证。
+
+
 android 进程间通信方式
 - Bundle
 - 文件共享
