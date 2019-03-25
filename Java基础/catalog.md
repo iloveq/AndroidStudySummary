@@ -2,7 +2,7 @@
 
 ![内存模型](https://github.com/woaigmz/java-study/blob/master/jvm%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.png)
 
-### 2：java 垃圾回收机制
+### 2：java 垃圾回收机制/几种垃圾回收算法
 
 
 ### 3：类加载机制
