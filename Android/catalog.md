@@ -120,3 +120,9 @@ android 进程间通信方式
 - 4.android:finishOnTaskLaunch 这个属性和android:allowReparenting属性相似，不同之处在于allowReparenting属性是重新宿主到有共同affinity的task中，而finishOnTaskLaunch属性是销毁实例。如果这个属性和android:allowReparenting都设定为“true”，则这个属性好些。
 
 - 5.android:taskAffinity 在Android系统中，一个application的所有Activity默认有一个相同的affinity（亲密关系,相似之处）。也就是说同一个应用程序的的所有Activity倾向于属于同一个task。但是我们并不能说Android里一个应用程序只有一个任务栈。taskAffinity 可以指定 任务栈,但是通过 NEWTASK启动 activity 会把所有系统不同app进程相同taskAffinity的吸附到一个task里
+
+### 23 Activity 源码里的设计模式：
+- 1. 桥接
+abstract Window 有 WindowManager 接口，  Window 实现类 PhoneWindow 和 WindowManage 实现类 WindowManagerImpl 互为2条路 单通过 Window 这条桥来接入。
+- 2. 单利
+WindowManagerGlobal ，WindowManagerImpl 的代理类，为 没有 voliate 的双重校验锁
