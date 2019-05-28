@@ -82,6 +82,8 @@ android 进程间通信方式
 
 ### 9 探讨 android 系统从点击图标到应用启动
 
+![start-activity](https://github.com/woaigmz/AndroidStudySummary/blob/master/Android/img/avtivity%20%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B.jpg)
+
 ### 10 探讨 android 系统从开机到 Launcher 
 
 ### 11 SharedPerference 源码分享
