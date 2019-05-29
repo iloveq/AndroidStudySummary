@@ -124,7 +124,20 @@ android 进程间通信方式
 - 5.android:taskAffinity 在Android系统中，一个application的所有Activity默认有一个相同的affinity（亲密关系,相似之处）。也就是说同一个应用程序的的所有Activity倾向于属于同一个task。但是我们并不能说Android里一个应用程序只有一个任务栈。taskAffinity 可以指定 任务栈,但是通过 NEWTASK启动 activity 会把所有系统不同app进程相同taskAffinity的吸附到一个task里
 
 ### 23 Activity 源码里的设计模式：
-- 1. 桥接
+- 1. 桥接模式
 abstract Window 有 WindowManager 接口，  Window 实现类 PhoneWindow 和 WindowManage 实现类 WindowManagerImpl 互为2条路 单通过 Window 这条桥来接入。
-- 2. 单利
+- 2. 单例模式
 WindowManagerGlobal ，WindowManagerImpl 的代理类，为 没有 voliate 的双重校验锁
+- 3. 工厂模式
+- 4. 模板模式
+- 5. 装饰者模式
+- 6. 建造者模式
+- 7. 代理模式
+- 8. 迭代器模式
+- 9. 命令模式
+- 10. 观察者模式
+- 11. 适配器模式
+- 12. 责任链模式
+- 13. 策略模式
+- 14. 状态机模式
+- 15. 备忘录模式 
