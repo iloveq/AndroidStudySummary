@@ -73,3 +73,11 @@ If(JVM.内存不足()) {
 
 
 ### 8：HashMap 数据结构,及实现
+
+### 9：sleep 和 wait 区别
+sleep时线程Thread静态方法，wait是Object类方法
+sleep必须捕获异常
+sleep是线程睡眠阻塞 ，wait是线程等待阻塞
+sleep不释放对象锁，wait释放对象锁
+sleep任何地方都能调用，wait只能同步方法或同步代码块里调用
+sleep调用intercept或intercepted方法并捕获中断异常，wait 调用 notify或notifyAll 方法唤醒
