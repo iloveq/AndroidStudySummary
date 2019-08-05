@@ -64,7 +64,8 @@ Navtive 层:
  - 进程间通信就要理解对象序列化的方式,Serializable与Parcelable的区别。
 
 ##### 微信的小程序，支付宝的小程序，都会在后台任务栏中出现一个app多个任务栏？
-猜想 可能是会有多个进程实现？有待验证。
+ - 设置flag就可以了 intent.addFlags(FLAG_ACTIVITY_NEW_DOCUMENT);
+ intent.addFlags(FLAG_ACTIVITY_MULTIPLE_TASK);
 
 
 android 进程间通信方式
