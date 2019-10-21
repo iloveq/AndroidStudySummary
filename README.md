@@ -4,6 +4,10 @@ android 学习总结
 
 ## [Android](https://github.com/woaigmz/AndroidStudySummary/blob/master/Android/catalog.md)
 
+## [Kotlin](https://github.com/woaigmz/AndroidStudySummary/blob/master/Kotlin/catalog.md)
+
+## [Flutter](https://github.com/woaigmz/AndroidStudySummary/blob/master/Flutter/catalog.md)
+
 ## [Java基础](https://github.com/woaigmz/AndroidStudySummary/blob/master/Java%E5%9F%BA%E7%A1%80/catalog.md)
 
 ## [some面试题](https://github.com/woaigmz/AndroidStudySummary/blob/master/some%E9%9D%A2%E8%AF%95%E9%A2%98/catalog.md)
