@@ -12,5 +12,7 @@
 
 1 从 setContentView 分析 surface 在 activity 的创建过程
 
-2 toast 源码分析
+2 toast 源码分析 tn wms 交互，badtoken 问题原因，解决方法
+
+3 contentprovider 源码分析 主动启动 ，被动启动（是否多进程模式） 使用query方法(cursor)数据传递过程 匿名共享内存 / 使用call方法(binder机制)
 
