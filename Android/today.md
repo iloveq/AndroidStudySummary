@@ -16,3 +16,7 @@
 
 3 contentprovider 源码分析 主动启动 ，被动启动（是否多进程模式） 使用query方法(cursor)数据传递过程 匿名共享内存 / 使用call方法(binder机制)
 
+### 2021.2.25
+
+1 从 aidl 到 binder 机制   Client - Server - ServiceManager binder 的关系
+
