@@ -20,3 +20,9 @@
 
 1 从 aidl 到 binder 机制   Client - Server - ServiceManager binder 的关系
 
+### 2021.2.26
+
+1 Dialog 的创建 window token 是一种什么样的存在并从源码设计角度分析，SystemService -> AMS/WMS - create token/token verify，context - application/service/activity
+
+2 从事件如何到达 activity 到事件分发机制
+
