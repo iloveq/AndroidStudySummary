@@ -55,3 +55,53 @@ class Solution{
 }
 ```
 
+### 2021.3.11
+
+1 返回倒数第 k 个节点
+
+```
+实现一种算法，找出单向链表中倒数第 k 个节点。返回该节点的值。
+
+注意：本题相对原题稍作改动
+
+示例：
+
+输入： 1->2->3->4->5 和 k = 2
+输出： 4
+说明：
+
+给定的 k 保证是有效的。
+
+题解：
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+
+class Solution{
+
+public int kthToLast(ListNode head, int k) {
+        ListNode first = head;
+        ListNode second = head;
+        //第一个指针先走k步
+        while (k-- > 0) {
+            first = first.next;
+        }
+        //然后两个指针在同时前进
+        while (first != null) {
+            first = first.next;
+            second = second.next;
+        }
+        return second.val;
+    }
+
+}
+
+```
+
+
