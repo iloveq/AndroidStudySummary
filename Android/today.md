@@ -53,8 +53,30 @@ class Solution{
         return sb.toString()
     }
 }
-```
 
+上面问题:sb.chartAt(top)这个top没有变，一直-1，估计要有top--and top++;
+
+可以这样吧
+class Solution{
+    public static String removeDuplicates(String S){
+        StringBuffer sb = new StringBuffer();
+        int top = 0;
+        for(int i = 0; i < S.length(); i++){
+            char ch = S.charAt(i);
+            if(top>0&&sb.charAt(top-1)==ch){
+				top--;
+                sb.deleteCharAt(top);
+            }else{
+				top++;
+                sb.append(ch);
+            }
+        }
+        return sb.toString()
+    }
+}
+
+```
+    
 ### 2021.3.11
 
 1 返回倒数第 k 个节点
