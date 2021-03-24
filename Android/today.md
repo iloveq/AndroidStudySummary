@@ -131,31 +131,158 @@ public int kthToLast(ListNode head, int k) {
 百度阅读一面
 
 1  activity 启动流程 ActivityThread main 方法怎么调用
+
 2 anr 如何检测
+
 3 okhttp 相关
+
 4 leakcanary 原理
+
 5 view layout 过程
+
 6 handler 如何处理延时消息
+
 7 threadlocal 数据结构
+
 8 java gc 垃圾回收
+
 9 线程池
 
 ### 2021.3.18
 
 美团打车1面
+
 1  private protected public
+
 2 string s1 = new String(“a”); string s2 = “a”; s1 == s2
+
 3 安卓内存泄露有哪些
+
 4 单例模式
+
 5 jvm 内存垃圾回收
+
 6 安卓view 宽高什么时候得到
-7 flutter 类上框架，好处
+
+7 flutter 类似框架，好处
+
 8 flutter 具体优化工作
+
 9 flutter 日志上报
+
 10 flutter webview 的坑
+
 11 安卓中的 GcRoot
 
 ### 2021.3.21
 
+华为荣耀一面
+
+1 算法：
+
+```
+题目描述
+给定一个数组arr，返回子数组的最大累加和
+例如，arr = [1, -2, 3, 5, -2, 6, -1]，所有子数组中，[3, 5, -2, 6]可以累加出最大的和12，所以返回12.
+[要求]
+时间复杂度为O(n)O(n)，空间复杂度为O(1)O(1)
+
+示例
+输入
+[1, -2, 3, 5, -2, 6, -1]
+输出
+12
+
+Solution:
+ public int maxsumofSubarray (int[] arr) {
+        // write code here
+        int[] arr1 = new int[arr.length+1];
+        int max = Integer.MIN_VALUE;
+        for(int i=0;i<arr.length;i++){
+            arr1[i+1] = arr[i]+arr1[i];
+            if(arr1[i+1]<0){
+                arr1[i+1] = 0;
+            }
+            max = Math.max(arr1[i+1],max);
+        }
+        return max;
+    }
+
+```
+2 安卓从应用开机到启动Launcher
+
+3 从点击Launcher图标到Activity启动过程
+
+4 说一说性能优化到几个方向
+
+华为荣耀二面
+
+1 binder 机制
+
+2 系统服务有那些，怎么创建的
+
+3 java 内存区域
+
+4 垃圾回收算法
+
+5 说一说 handler 消息机制
+
+字节幸福里一面
+
+1 java volatile 和 synchorniced 区别
+
+2 算法 给一个数组，给一个 k 值，输出所有相加为 k 的子数组
+
+3 java 垃圾回收算法
+
+4 安卓gcRoot
+
+5 安卓内存泄漏检测线上方法
+
+6 aidl 中的 anr 遇到过吗
+
+8 安卓侧滑返回怎么实现
+
+9 recyclerview 缓存机制是什么样的
+
+10 安卓4中启动模式
+
+百度阅读二面
+
+1 java 中 error 和 exception 有什么区别
+
+2 算法： 如何判断链表是环，并计算出环的长度
+
+3 安卓 图片 glide 框架怎么缓存的，lru 数据结构
+
+4 安卓中 IntentService
+
+5 讲下安卓 aidl
+
+6 安卓中几种启动模式及其应用场景
+
+7 项目中 jsbride 怎么设计的
+
+# 2021.3.23
+
+小米一面
+
+1 java hashmap 如何扩容，hashmap 如何存放数据，红黑树和二叉平衡树的区别
+
+2 java volatile 和 synchronized 区别
+
+3 java 死锁如何造成
+
+4 bitmap 如何计算大小 
+
+5 算法 ：二维数组 [[1,2,3],[4,5,6],[7,8,9]] 输出 [[1,4,7],[2,5,8],[3,6,9]] 
+
+6 handler 消息机制内存屏障
+
+7 安卓电量优化，应用在后台耗电怎么检测
+
+8 安卓 koltin 了解么，携程和rxjava区别
+
+9 应用包活方法
 
 
