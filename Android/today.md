@@ -128,4 +128,34 @@ public int kthToLast(ListNode head, int k) {
 ### 2021.3.17
 1 hashmap 的源码分析 hask 算法  putVal/resize 
 
+百度阅读一面
+
+1  activity 启动流程 ActivityThread main 方法怎么调用
+2 anr 如何检测
+3 okhttp 相关
+4 leakcanary 原理
+5 view layout 过程
+6 handler 如何处理延时消息
+7 threadlocal 数据结构
+8 java gc 垃圾回收
+9 线程池
+
+### 2021.3.18
+
+美团打车1面
+1  private protected public
+2 string s1 = new String(“a”); string s2 = “a”; s1 == s2
+3 安卓内存泄露有哪些
+4 单例模式
+5 jvm 内存垃圾回收
+6 安卓view 宽高什么时候得到
+7 flutter 类上框架，好处
+8 flutter 具体优化工作
+9 flutter 日志上报
+10 flutter webview 的坑
+11 安卓中的 GcRoot
+
+### 2021.3.21
+
+
 
