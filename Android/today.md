@@ -285,4 +285,24 @@ Solution:
 
 9 应用包活方法
 
+#2021.3.24
+
+字节幸福里二面
+
+1 flutter 中 网络框架，图片框架，实现原理 类比 okhttp glide，图片是否可以互相使用
+
+2 flutter 项目中解决的最有成就感的问题
+
+3 flutter statewidget 生命周期
+
+3 算法 返回倒数第 k 个节点 最近这个题 hot
+
+4 安卓 handler 消息机制
+
+5 手写几种 java 单例模式 doublecheck，volatile synchronized 区别
+
+6 flutter 混合开发了解过吗，聊一下
+
+7 未来想继续 flutter 还是 android （2个平台的优缺点）
+
 
