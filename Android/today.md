@@ -305,4 +305,44 @@ Solution:
 
 7 未来想继续 flutter 还是 android （2个平台的优缺点）
 
+# 京东云一面
+
+1 flutter，reactnative 区别
+2 mvp ， mvvm 区别
+3 jitpack 有哪些
+4 kotlin 扩展函数，kotlin run let 区别
+5 activity 几种启动模式，及其使用场景
+6 用过 vue 吗，简单介绍下
+7 java 垃圾回收机制
+8 性能优化做过什么
+
+# 京东云二面
+
+1 activity 以 singleTop 模式启动，如果顶层页面崩溃会发生什么，如何处理
+2 activity 生命周期
+3 fragment 生命周期
+4 service 生命周期
+5 contentprovider 和 application 的 oncreate 谁先执行
+6 降下性能优化中用到的排查工具
+
+# 美团打车二面
+
+1 integer(1) == interger(2)
+2 arraylist linkedlist 区别
+3 hashmap 扩容，线程同步 map 有那些
+4 sparearray arraymap 区别
+5 java 内存模型
+6 java 内存区域划分
+7 算法 ：写3种简单排序
+8 举例几种内存泄漏的例子，leakcannery 原理
+9 聊聊安卓启动优化
+10 安卓 activity 生命周期
+11 安卓 intentservice
+
+# 字节幸福里3面
+1 项目里 activity 启动
+
+
+
+
 
