@@ -390,6 +390,81 @@ Solution:
 
 4 职业规划
 
+##2021/4/14
+
+百度一面试
+
+1 message可以复用?，怎么复用，不同线程共用一个messageQueue?
+
+2 gradle的hooke怎么做
+
+3 gradle的一些了解
+
+3 invalidate 会立即刷新界面嘛
+
+4 flutter2.0的都有什么，任务栈有没有了解。
+
+5 自己写一个String，通过反射可以替换系统的String吗？会加载内存吗？
+
+6 Service可以写界面吗?。
+
+7 字符串 下划线转驼峰。
+
+
+会小二面试
+
+1 A界面上有B，如何实现点击事件给A界面，滑动一部分之后，将滑动事件交给B。
+
+2 linkHashMap跟HashMap的区别。
+
+3 线程池的几个参数，以及传入队列如果满了，会发生什么。
+
+4 一只蜗牛掉进了井里，井深x米，它每30分钟可以向上爬1米，每爬行30分钟就需要休息y分钟，休息的时候，每分钟下滑2厘米，蜗牛的体质不同，所需休息时间不同，
+尝试编写一个函数，计算不同的蜗牛掉进不同深度的井里所需要的时间
+
+5 设计一个电梯系统。
+
+京东小鲸鱼
+
+1 AsyncTask的原理。
+
+2 Activity如何隐士启动以及显示启动原理。
+
+3 图片的处理，操作类，大图的处理。
+
+4 flutter如何检查内存泄露,数据共享,单线程模型，微服务消息耗时会出现什么情况？不同的isolate共享pub吗。
+
+
+5 okhttp的拦截器的分析
+
+6 Aidl的使用，原理。
+
+7 网络优化，弱网环境。
+
+java 
+
+      String spad =new String("abc");
+        String spa = "abc";
+        change(spa);
+        System.out.println(spa);
+        String dd="java";
+        String str = new StringBuilder("ja").append("va").toString();
+        System.out.println((spad==spa) + "....");
+
+   public static void change(String ss) {
+        ss = "gbc";
+    }
+是否相等，开辟空间。
+
+
+
+
+
+
+
+
+
+
 
 
 
