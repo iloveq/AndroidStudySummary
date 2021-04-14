@@ -400,15 +400,17 @@ Solution:
 
 3 gradle的一些了解
 
-3 invalidate 会立即刷新界面嘛
+4 invalidate 会立即刷新界面嘛
 
-4 flutter2.0的都有什么，任务栈有没有了解。
+5 flutter2.0的都有什么，任务栈有没有了解。
 
-5 自己写一个String，通过反射可以替换系统的String吗？会加载内存吗？
+6 自己写一个String，通过反射可以替换系统的String吗？会加载内存吗？
 
-6 Service可以写界面吗?。
+7 Service可以写界面吗?。
 
-7 字符串 下划线转驼峰。
+8 如何检测ANR
+
+9 字符串 下划线转驼峰。
 
 
 会小二面试
